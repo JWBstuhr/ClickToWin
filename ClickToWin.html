@@ -1,0 +1,41 @@
+<title>Click the Link to Win!</title>
+<style>
+body {
+text-align: center;
+background-color: #000000;
+font-weight: bold;
+color: #ffffff;
+}
+.a {
+color: #0000ff;
+text-decoration: underline;
+text-decoration-color: #0000ff;
+}
+.a:hover {
+color: #ff0000;
+text-decoration: none;
+}
+</style>
+<script>
+window.onload = function(){
+document.getElementById('1').onmouseover = function() {
+    document.getElementById("1").removeAttribute("href")
+  };
+document.getElementById('1').onmouseout = function() {
+    document.getElementById("1").setAttribute("href","https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+};
+};
+</script>
+<br>
+<br>
+<br>
+<br>
+<h1><a class="a" id="1">Click this link to win!</a></h1>
+<h5>When you click it, you will be redirected to the win page.</h5>
+<p>Trust me, it is a link.</p>
+<br>
+<br>
+<p>By JWBstuhr (2021)</p>
+<p class="hid">Open Inspect Element. Drop down the body tag and look below the code for this text. There will be the solution.</p>
+<!-- Solution: Open Inspect Element on Chrome, use the element picker tool (Arrow in Square icon in the top left) to select the link. Click Event Listeners and drop down "onmouseover". Click remove. Close Inspect Element and you'll be able to win. -->
+<p>You are not allowed to cheat (ex. using Inspect Element or a code viewer) unless the program tells you to.</p>
